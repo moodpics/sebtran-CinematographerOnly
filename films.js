@@ -1,10 +1,300 @@
 /* Film catalogue — edit freely.
- * list: 'cinematography' (DoP work); 'direction' is intentionally empty on this cinematographer-only site.
+ * lists: 'cinematography' (DoP work) and 'direction' (films you directed).
  * Each film: Vimeo id (+ h hash for unlisted), client, title, category, credits.
  * Reorder entries to change order on the site. The first film of each list is the hero loop.
  */
 window.FILMS = {
-  "direction": [],
+  "direction": [
+    {
+      "id": "1246445487",
+      "h": null,
+      "client": "Prada",
+      "title": "Paradoxe Sweet Chemistry — Zendaya",
+      "category": "Beauty",
+      "director": null,
+      "production": "Phantasm",
+      "year": null,
+      "duration": 6,
+      "thumb": "https://i.vimeocdn.com/video/2225875891-a19a3fd16b1be4c5e797aeb0f17a9f1686e908032f328c145f1023a33279ba90-d",
+      "loopEnd": 3.7
+    },
+    {
+      "id": "1246432468",
+      "h": null,
+      "client": "Miu Miu",
+      "title": "Miutine — Emma Corrin, Digital",
+      "category": "Beauty",
+      "director": null,
+      "production": "Psycho",
+      "year": null,
+      "duration": 30,
+      "thumb": "https://i.vimeocdn.com/video/2225845901-9090ab98f55b0497be42820277579926b7d42157c5642a89c22d91b66cecfc25-d"
+    },
+    {
+      "id": "1246445465",
+      "h": null,
+      "client": "Prada",
+      "title": "Paradoxe Sweet Chemistry — Zendaya, Behind the Scenes (Barry Jenkins)",
+      "category": "BTS",
+      "director": null,
+      "production": "Phantasm",
+      "year": null,
+      "duration": 15,
+      "thumb": "https://i.vimeocdn.com/video/2225856275-a55f64e501b6894c0102cef91b6ac4b033aa8d70a5e037f2eac2c366cde1a4e6-d"
+    },
+    {
+      "id": "1200606933",
+      "h": "ff0737b6b2",
+      "client": "L'Oréal Paris",
+      "title": "Infaillible Skin Ink — Cara Delevingne",
+      "category": "Beauty",
+      "director": null,
+      "production": "Phantasm",
+      "year": null,
+      "duration": 30,
+      "thumb": "https://i.vimeocdn.com/video/2169914461-55db8a5d3e9cb83fd85c773941c290aead20ebb6ee39dad3ea5aca0db59c13f3-d"
+    },
+    {
+      "id": "1246431401",
+      "h": null,
+      "client": "Prada",
+      "title": "Paradoxe — Tom Holland in Conversation with Perfumers",
+      "category": "Beauty",
+      "director": null,
+      "production": "Craft WW",
+      "year": null,
+      "duration": 15,
+      "thumb": "https://i.vimeocdn.com/video/2225841976-618a2df9f9801dadae8767da96151654e5fb7066f0a752ac4fa3cf9ed752786c-d"
+    },
+    {
+      "id": "1228918026",
+      "h": "f160cb329b",
+      "client": "Armani Beauty",
+      "title": "Rose-Blush — Océane",
+      "category": "Beauty",
+      "director": null,
+      "production": "Maison Montcalm",
+      "year": null,
+      "duration": 19,
+      "thumb": "https://i.vimeocdn.com/video/2203452136-58da23c9ba0948c2b51cb277eb209a2121d8a23c36ac7efccadbbdc5d7ec7fc0-d"
+    },
+    {
+      "id": "1246441088",
+      "h": null,
+      "client": "Prada",
+      "title": "Paradigme — Tom Holland, How to Refill",
+      "category": "Beauty",
+      "director": null,
+      "production": "Psycho",
+      "year": 2026,
+      "duration": 73,
+      "thumb": "https://i.vimeocdn.com/video/2225877227-7867c5e830254dc60b945cd512824dc7f7833586ef5029ac97429a9af38f7d96-d"
+    },
+    {
+      "id": "1131156308",
+      "h": "07d3cf34d5",
+      "client": "Miu Miu",
+      "title": "Miutine — Emma Corrin, Behind the Scenes (Hailey Benton Gates)",
+      "category": "BTS",
+      "director": null,
+      "production": "Psycho",
+      "year": null,
+      "duration": 30,
+      "thumb": "https://i.vimeocdn.com/video/2075027570-3b5994f021a5c22ce47d2bcd4df6b47973e49e29df82ef99927fc8302df201ac-d"
+    },
+    {
+      "id": "1246441687",
+      "h": null,
+      "client": "Bourjois",
+      "title": "French Riviera",
+      "category": "Beauty",
+      "director": null,
+      "production": "Onirim",
+      "year": 2026,
+      "duration": 20,
+      "thumb": "https://i.vimeocdn.com/video/2225886484-85bf2cb16d4cc3e2cd0833fed3c9e48fea28224a4b8ace68efe1953ff9ed6199-d"
+    },
+    {
+      "id": "1246441381",
+      "h": null,
+      "client": "Prada",
+      "title": "Paradigme — Tom Holland, Behind the Scenes (Thomas Vinterberg)",
+      "category": "BTS",
+      "director": null,
+      "production": "Psycho",
+      "year": null,
+      "duration": 60,
+      "thumb": "https://i.vimeocdn.com/video/2225851287-351f8c4d9399e7afdc5c0fd94b6c11ebf9a9678c39afdbdcbc305ac7e29b32a4-d"
+    },
+    {
+      "id": "1200611767",
+      "h": "1a45841cfb",
+      "client": "L'Oréal Paris",
+      "title": "Glycolic Bright — ASMR Routine",
+      "category": "Beauty",
+      "director": null,
+      "production": "U-Turn",
+      "year": null,
+      "duration": 15,
+      "thumb": "https://i.vimeocdn.com/video/2167753400-0db0c7c20a61551662fabba2106fef6a0becaa5a673c36d1fbb08b8049b4abd8-d"
+    },
+    {
+      "id": "1246441382",
+      "h": null,
+      "client": "Prada",
+      "title": "Paradigme — Tom Holland, Behind the Scenes (Thomas Vinterberg) — Chapter 6 Piano",
+      "category": "BTS",
+      "director": null,
+      "production": "Psycho",
+      "year": 2026,
+      "duration": 45,
+      "thumb": "https://i.vimeocdn.com/video/2225892271-c46890f0a4d6f343c132dea2b0cf677de84a504c4da35e6ed01c68ab61dceebe-d"
+    },
+    {
+      "id": "1246446915",
+      "h": null,
+      "client": "Miu Miu",
+      "title": "Miutine — The Intense Spray",
+      "category": "Beauty",
+      "director": null,
+      "production": "Psycho",
+      "year": null,
+      "duration": 15,
+      "thumb": "https://i.vimeocdn.com/video/2225885538-50f54165e595c5c7ee8a2ded477fdf156a191791e121fac226af28bed5b12aef-d"
+    },
+    {
+      "id": "1246445193",
+      "h": null,
+      "client": "Prada",
+      "title": "Paradoxe Sweet Chemistry — Scent Testing",
+      "category": "Beauty",
+      "director": null,
+      "production": "Phantasm",
+      "year": null,
+      "duration": 30,
+      "thumb": "https://i.vimeocdn.com/video/2225889889-37d5f647fa9fec83e7bd4bd3acc1550beb3d0867b867759ef25dd24cec2d29dd-d"
+    },
+    {
+      "id": "339229562",
+      "h": "e873e520db",
+      "client": "L'Oréal × Balmain",
+      "title": "Before the Red Carpet — Cannes",
+      "category": "Beauty",
+      "director": null,
+      "production": "Storner Prod",
+      "year": "2017",
+      "duration": 48,
+      "thumb": "https://i.vimeocdn.com/video/787201393-5f63af8a017b08fafeac02e8d54a836ce36aba2e363a9e3ae3b1d512426b8ba3-d"
+    },
+    {
+      "id": "1131155471",
+      "h": "3587d0b4a5",
+      "client": "Miu Miu",
+      "title": "Miutine — Emma Corrin, The Typewriter",
+      "category": "Beauty",
+      "director": null,
+      "production": "Psycho",
+      "year": null,
+      "duration": 13,
+      "thumb": "https://i.vimeocdn.com/video/2075026610-7b3610fb22f514f8627e9428a9f08a8a55fd61bad829d7b0a79ff33d3afff899-d"
+    },
+    {
+      "id": "1228918022",
+      "h": "6d8965d61d",
+      "client": "Armani Beauty",
+      "title": "Mauve-Blush — Sohyeon",
+      "category": "Beauty",
+      "director": null,
+      "production": "Maison Montcalm",
+      "year": null,
+      "duration": 20,
+      "thumb": "https://i.vimeocdn.com/video/2203510020-628bf0ef291525990ec03ead94b07a5ba5583875eb8f8be5e84538b6a321fed8-d"
+    },
+    {
+      "id": "535333069",
+      "h": null,
+      "client": "SKP",
+      "title": "Enter the Legends — Vanessa Axente",
+      "category": "Fashion",
+      "director": null,
+      "production": "Onirim",
+      "year": 2021,
+      "duration": 30,
+      "thumb": "https://i.vimeocdn.com/video/1108187563-96e616e4fab28e336872803b2d3d9ca1ef22adc15bbff7815151a96984d1b78f-d"
+    },
+    {
+      "id": "1246445190",
+      "h": null,
+      "client": "Prada",
+      "title": "Paradoxe Sweet Chemistry — Stacking Game",
+      "category": "Beauty",
+      "director": null,
+      "production": "Phantasm",
+      "year": null,
+      "duration": 30,
+      "thumb": "https://i.vimeocdn.com/video/2225889092-d20ec58f82420d5cc8635d1e8c1830cad425573f0dd3c84645718761000ca118-d"
+    },
+    {
+      "id": "1131153071",
+      "h": "4cd8ef52fc",
+      "client": "L'Oréal Paris",
+      "title": "Glycolic Bright — Photomaton",
+      "category": "Beauty",
+      "director": null,
+      "production": "Mirror Mirror",
+      "year": null,
+      "duration": 20,
+      "thumb": "https://i.vimeocdn.com/video/2075024311-101bb096cb7e07992ef830c8a391599730c63d11211e85a7175d61aa61e87a21-d"
+    },
+    {
+      "id": "1246446913",
+      "h": null,
+      "client": "Miu Miu",
+      "title": "Miutine Wildflower — What's in My Bag",
+      "category": "Beauty",
+      "director": null,
+      "production": "Psycho",
+      "year": null,
+      "duration": 15,
+      "thumb": "https://i.vimeocdn.com/video/2225885328-fc1dc4eae770b4c19d14d4075648a212a17bba5a5c3c19bb1dab01d9df8e8036-d"
+    },
+    {
+      "id": "1246446286",
+      "h": null,
+      "client": "Prada",
+      "title": "Paradoxe Sweet Chemistry — Holiday Gifting",
+      "category": "Beauty",
+      "director": null,
+      "production": "Phantasm",
+      "year": null,
+      "duration": 20,
+      "thumb": "https://i.vimeocdn.com/video/2225857362-bf5f872fbdf4e2a1cd657aa03e9e4365fb8dd4f540312794626d149c3675459f-d"
+    },
+    {
+      "id": "1200611895",
+      "h": "a11c9f4db6",
+      "client": "L'Oréal Paris",
+      "title": "Glycolic Bright — Eye Serum",
+      "category": "Beauty",
+      "director": null,
+      "production": "U-Turn",
+      "year": null,
+      "duration": 15,
+      "thumb": "https://i.vimeocdn.com/video/2167753184-297b4131dcb1b8cca98d8d1ec911835db401fbd538e70057db78426da9386ceb-d"
+    },
+    {
+      "id": "1246433000",
+      "h": null,
+      "client": "Miu Miu",
+      "title": "Miutine — Emma Corrin, Behind the Scenes (Hailey Benton Gates) — Editorial",
+      "category": "BTS",
+      "director": null,
+      "production": "Psycho",
+      "year": null,
+      "duration": 10,
+      "thumb": "https://i.vimeocdn.com/video/2225843929-776fbe5cc0c901d8441c267967d7667b252ee4a8ebdbbe973e51679d2e1763f6-d"
+    }
+  ],
   "cinematography": [
     {
       "id": "832597646",

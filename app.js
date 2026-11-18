@@ -6,7 +6,7 @@
 
   /* ---------- Config: edit these ---------- */
   const CONFIG = {
-    email: "sebastientrandop@gmail.com",
+    email: "",
     defaultMode: "cinematography",
     clients: ["Cartier", "Yves Saint Laurent", "Prada", "Miu Miu", "Lancôme", "Chanel", "Balmain", "L'Oréal Paris",
       "Armani Beauty", "Maison Margiela", "Off-White", "Chaumet", "Kérastase", "AMI Paris", "Salomon",
@@ -16,7 +16,7 @@
         role: "Your selection",
         workTitle: "Selected Films",
         hud: "SELECT · ♥ · 25 FPS",
-        about: "A personal *selection* of films by Seb Trân — cinematography. Use Share to send it, or come back to it later."
+        about: "A personal *selection* of films by Seb Trân — cinematography and direction. Use Share to send it, or come back to it later."
       },
       cinematography: {
         role: "Cinematographer",
@@ -25,10 +25,10 @@
         about: "More than ten years behind the camera, lighting *luxury*, *beauty* and *fashion* for houses like Cartier, Yves Saint Laurent, Chanel and Lancôme — and music videos and short films when the story calls for it. Based in Paris, I work closely with directors to build images where light feels like *skin* and every frame holds a breath longer than expected."
       },
       direction: {
-        role: "Director",
+        role: "Director / DP",
         workTitle: "Directed Films",
         hud: "SC 01 · TK 03 · REC · 25 FPS",
-        about: "As a director I start from the *light* and build outward — fragrance, beauty and fashion films for Prada, Miu Miu, Armani Beauty and L'Oréal Paris, shot with the eye of a cinematographer and cut with an obsession for *texture*, *rhythm* and *intimacy*. Small crews, precise images, faces that stay with you."
+        about: "As a director / DP I start from the *light* and build outward — fragrance, beauty and fashion films for Prada, Miu Miu, Armani Beauty and L'Oréal Paris, shot with the eye of a cinematographer and cut with an obsession for *texture*, *rhythm* and *intimacy*. Small crews, precise images, faces that stay with you."
       }
     }
   };
@@ -928,7 +928,7 @@
   const mq = $("[data-marquee]");
   mq.innerHTML = [...CONFIG.clients, ...CONFIG.clients].map(c => `<span>${esc(c)}</span>`).join("");
   const mail = $("[data-mail]");
-  mail.href = `mailto:${CONFIG.email}`; $("[data-mail-txt]").textContent = CONFIG.email;
+  if (CONFIG.email) { mail.href = `mailto:${CONFIG.email}`; $("[data-mail-txt]").textContent = CONFIG.email; } else { mail.hidden = true; }
   $("[data-year]").textContent = new Date().getFullYear();
 
   /* ==========================================================================
@@ -958,7 +958,7 @@
   /* ==========================================================================
      Boot
      ========================================================================== */
-  const hashFull = location.hash.slice(1).replace(/^direction/, "cinematography"), hashMode = hashFull.split("=")[0], hashRest = hashFull.slice(hashMode.length + 1);
+  const hashFull = location.hash.slice(1), hashMode = hashFull.split("=")[0], hashRest = hashFull.slice(hashMode.length + 1);
   if (hashMode === "selection" && hashRest) { importShared(hashRest); }
   Promise.race([resolveThumbs(), wait(2500)]).then(() => {
     applyMode(CONFIG.modes[hashMode] ? hashMode : CONFIG.defaultMode);
