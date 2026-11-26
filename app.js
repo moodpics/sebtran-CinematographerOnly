@@ -1016,7 +1016,7 @@
   /* ==========================================================================
      Boot
      ========================================================================== */
-  const hashFull = location.hash.slice(1), hashMode = hashFull.split("=")[0], hashRest = hashFull.slice(hashMode.length + 1);
+  const hashFull = location.hash.slice(1).replace(/^direction/, "cinematography"), hashMode = hashFull.split("=")[0], hashRest = hashFull.slice(hashMode.length + 1);
   if (hashMode === "selection" && hashRest) { importShared(hashRest); }
   Promise.race([resolveThumbs(), wait(2500)]).then(() => {
     applyMode(CONFIG.modes[hashMode] ? hashMode : CONFIG.defaultMode);

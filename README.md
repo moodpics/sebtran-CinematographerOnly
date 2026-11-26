@@ -1,5 +1,6 @@
 > ⚠️ **Dépôt généré automatiquement** depuis [moodpics/sebtran](https://github.com/moodpics/sebtran) (script `scripts/build-cinematographer.mjs`).
-> Ne rien modifier ici : toute modification sera écrasée au prochain push sur `sebtran`.
+> Version « Cinematography seule », à partager telle quelle. Le site officiel est `sebastien-tran.com` (dépôt `moodpics/sebtran`).
+> Ne rien modifier ici : toute modification sera écrasée à la prochaine synchro.
 
 # Seb Trân — Cinematographer & Director / DP
 
